@@ -1,0 +1,17 @@
+main {
+    display: flex;
+}
+
+fieldset {
+    background-color: #a4c9f3;
+    width: 85%;
+    justify-content: center;
+}
+
+div {
+    margin: 10px;
+}
+
+button {
+    margin-top: 25px;
+}

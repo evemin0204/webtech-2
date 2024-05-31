@@ -1,0 +1,115 @@
+/* @import url('../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+main {
+  background-color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 200px;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.box-1 {
+  margin-left: 40px;
+}
+
+
+
+.box-3 {
+  margin-right: 40px;
+}
+
+p {
+  font-size: x-small;
+  color: gray;
+
+}
+
+h5 {
+  color: darkgray;
+
+}
+
+
+
+.arrow {
+  display: inline-block;
+}
+
+
+
+
+.bi-arrow-up {
+  color: green;
+  display: inline-block;
+}
+
+.bi-arrow-down {
+  color: red;
+  display: inline-block;
+}
+
+
+
+.green {
+  color: green;
+
+  display: inline-block;
+}
+
+.red {
+  color: red;
+  display: inline-block;
+} */
+
+
+@import url('../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+main {
+  background-color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 200px;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  margin: 0 40px;
+}
+
+p {
+  font-size: x-small;
+  color: gray;
+}
+
+h2,
+p,
+.arrow>p {
+  color: darkgray;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.bi-arrow-up {
+  color: green;
+}
+
+.bi-arrow-down {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}

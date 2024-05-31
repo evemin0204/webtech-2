@@ -1,0 +1,42 @@
+<main>
+    <div class="transactions-header">
+        <h6>TRANSACTIONS</h6>
+        <button type="button" class="btn btn-secondary" routerLink="form">ADD</button>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="col-3">Cryptocurrency</th>
+                        <th class="col-1">Amount</th>
+                        <th class="col-3">Price ($)</th>
+                        <th class="col-3">Date</th>
+                        <th class="col-1"></th>
+                        <th class="col-1"></th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let transaction of transactions">
+                        <th scope="row">{{ transaction.cryptoCurrency | titlecase}}</th>
+                        <td>{{ transaction.cryptoAmount }}</td>
+                        <td>{{ transaction.price }}</td>
+                        <td>{{ transaction.transactionDate | date }}</td>
+                        <td class="icon">
+                            <a [routerLink]="['/edit', transaction._id]"> <span
+                                    class=" bi bi-pencil-square fa-xs "></span></a>
+                        </td>
+                        <td>
+                            <span class=" bi bi-trash fa-xs " (click)="deleteTransaction(transaction._id)"
+                                type="button"></span>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>

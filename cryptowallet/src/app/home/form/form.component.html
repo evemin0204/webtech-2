@@ -1,0 +1,39 @@
+<main class="d-flex min-vh-100">
+    <fieldset class="container  mt-5">
+        <legend class="mb-4">
+        </legend>
+
+        <form (ngSubmit)="createTransaction(newTransactionForm)" #newTransactionForm="ngForm">
+            <div class="form-group row">
+                <label class="col-2 col-form-label" for="cryptoCurrency">Crypto Currency</label>
+                <select class="col-10 form-select" aria-label="Default select example" id="cryptoCurrency"
+                    name="cryptoCurrency" placeholder="Select a Crypto Currency" required ngModel>
+                    <option selected>Select the Crypto Currency</option>
+                    <option *ngFor="let coin of coins;" [value]="coin.id"> {{ coin.name }}</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                <label class="col-2 col-form-label" for="cryptoAmount">Amount</label>
+                <input type="text" class="col-10 form-control" id="cryptoAmount" name="cryptoAmount"
+                    placeholder="Amount" required ngModel>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-2 col-form-label" for="price">Price (USD)</label>
+                <input type="text" class="col-10 form-control" id="price" name="price" placeholder="Price" required
+                    ngModel>
+
+            </div>
+            <div class="form-group row">
+                <label class="col-2 col-form-label" for="date">Date</label>
+                <input type="date" class="col-10 form-control" id="date" placeholder="" name="transactionDate" ngModel>
+
+            </div>
+            <div class="form-group row  justify-content-end">
+                <button type="submit" class="col-4 btn btn-secondary">Add</button>
+                <div class="col-2"></div>
+                <button type="button" class="col-4 btn btn-secondary" (click)="cancel()">Cancel</button>
+            </div>
+        </form>
+    </fieldset>
+</main>

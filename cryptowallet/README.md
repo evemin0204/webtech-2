@@ -6,18 +6,19 @@ Das Problem: Die Benutzer sollten alle ihre Konten einzeln eröffnen und alle Ve
 
 Lösung: Mit unserer vorgeschlagenen Lösung "Crypto Portfolio" sehen Benutzer alle ihre Coins und Gesamtguthaben an einem Ort. Sie geben die Coins ein, die sie von verschiedenen Plattformen gekauft haben, und sehen den aktuellen Gesamtwert ihrer Investition.
 
-Das Backend wird mit Node (v14.17.5), Typescript, Mongoose, MongoDB (db version v5.0.4) entwickelt.
+Das Backend wird mit Node (v14.17), Typescript, Mongoose, MongoDB (db version v5.0.4) entwickelt.
 
 Das Frontend wird mit Angular (13.0.3), Bootstrap (5.1.3), Node entwickelt.
  
 
 ## Build
 
-Zuerst muss man das Backend und danach Frontend bauen. 
+Zuerst müss man das Backend und danach Frontend bauen. 
 
 ### Backend
 
 1. Führen Sie zuerst `npm install` aus, um die Abhängigkeiten zu installieren.
+2. Führen Sie danach `npm build` aus, um das Backend zu erstellen.
 
 ### Frontend 
 
@@ -30,30 +31,8 @@ Zuerst muss man das Backend und danach Frontend bauen.
 
 1. Führen Sie die lokale MongoDb-Instanz aus und rufen Sie die db-url ab (z. B. mongodb://localhost:27017/cryptoPortfolio).
 2. Aktualisieren Sie `mongoURI` (Datenbank-URL) in `config/database.ts`.
-3. `npm start` führt den Backend-Service aus. Es wird von `http://localhost:8000` aus zugänglich sein
+3. `npm start` führt den Backend-Dienst aus. Es wird von `http://localhost:8000` aus zugänglich sein
 
 ### Frontend
 
 Führen Sie `ng serve` für einen Entwicklungsserver aus. Navigieren Sie zu `http://localhost:4200/`. 
-
-## Usage
-
-Signup page 
-
-![Signup page](/screenshots/signup.png)
-
-Login Page
-
-![Login page](/screenshots/login.png)
-
-Home page
-
-![Home page](/screenshots/home.png)
-
-Add page
-
-![Add page](/screenshots/add.png)
-
-Edit page
-
-![Edit page](/screenshots/edit.png)

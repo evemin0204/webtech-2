@@ -1,0 +1,38 @@
+<main>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="alert alert-danger" role="alert" *ngIf="errorMessage">
+                {{errorMessage}}
+            </div>
+
+            <form (ngSubmit)="onSignup(signupForm)" #signupForm="ngForm" *ngIf="!isSucceed">
+                <p>Registration Info</p>
+
+                <div class="form-outline mb-4">
+                    <input type="email" class="form-control" name="username" placeholder="Usernane" required ngModel />
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="password" class="form-control" name="password" placeholder="Password" required
+                        ngModel />
+                </div>
+
+                <div class="form-outline mb-3">
+                    <button class=" btn btn-primary" type="submit">Sign up</button> <br>
+                </div>
+
+            </form>
+            <div class="alert alert-success" role="alert" *ngIf="isSucceed">
+                <h4 class="alert-heading">Welcome!</h4>
+                <p>You have successfully registered.</p>
+                <hr>
+                <p class="mb-0">Please <a href="/login">sign in</a> to access your dashboard.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <img src="../../assets/sign-up.png" alt="signup">
+        </div>
+
+    </div>
+</main>

@@ -1,0 +1,42 @@
+<main>
+    <h6>WALLET</h6>
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="card" *ngFor="let wallet of walletData">
+
+                <div class="card-body">
+
+                    <div class="box-1">
+                        <div>
+                            <h4>{{ wallet._id | titlecase }}</h4>
+                        </div>
+                        <div>
+                            <p class="card-title">AMOUNT: {{ wallet.amount }} </p>
+                        </div>
+                    </div>
+
+                    <div class="box-2">
+
+                        <div class="total-value">
+
+                            <div [ngClass]="isEarn(wallet) ? 'green' : 'red'">
+                                <span class="bi" [ngClass]="isEarn(wallet) ? 'bi-arrow-up' : 'bi-arrow-down'"></span>
+                                <span>{{ getPnl(wallet) | number : '1.2-2'}}%</span>
+                            </div>
+                            <h5 class="card-total">${{ wallet.price | number : '1.2-2' }}</h5>
+                        </div>
+                        <div class="paid">
+
+                            <p>PAID: ${{ wallet.invested }}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</main>

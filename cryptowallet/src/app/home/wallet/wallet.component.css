@@ -1,0 +1,84 @@
+@import url('../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+main {
+    
+   margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+main > h6 {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    color: darkgray;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.paid p {
+    font-size: small;
+    color: #cbdbf2;
+    text-align: end;
+    
+}
+
+.card {
+    margin: 10px 15px 35px 35px;
+    background-color:  
+    /* #abbee3;  #0a4b8e; */ #7eaae8;   
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    color: white;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-title {
+    font-size: small;
+    color: #cbdbf2;
+}
+
+.card-total {
+    font-size: large;
+    color: white;
+}
+
+.box-1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+    flex-direction: column;
+    
+}
+
+.box-2 {
+    display: flex;
+    margin-right: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+
+
+.green {
+    
+    color: #90EE90;
+    font-size: small;
+    margin-right: 15px;
+}
+
+.red {
+   
+    color: #c7444a;
+    font-size: small;
+    margin-right: 15px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-value {
+    display: flex;
+    justify-content: flex-start;
+}

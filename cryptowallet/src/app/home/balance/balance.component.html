@@ -1,0 +1,36 @@
+<!-- <main>
+    <div class="box-1">
+        <p>INITIAL INVESTMENT</p>
+        <h5>$ {{ totalInvestment | number : '1.2-2' }}</h5>
+    </div>
+    <div class="box-2">
+        <p>BALANCE DETAILS</p>
+        <h1>${{ totalBalance | number : '1.2-2' }}</h1>
+    </div>
+    <div class="box-3">
+        <p>PROFIT </p>
+        <div class="arrow">
+            <span class="bi" [ngClass]="isEarn ? 'bi-arrow-up' : 'bi-arrow-down'"></span>
+            <h5 [ngClass]="isEarn ? 'green' : 'red'">{{ totalPnl | number : '1.2-2'}}%</h5>
+        </div>
+    </div>
+
+</main> -->
+
+<main>
+    <section aria-labelledby="initial-investment">
+        <h2 id="initial-investment">INITIAL INVESTMENT</h2>
+        <p>$ {{ totalInvestment | number : '1.2-2' }}</p>
+    </section>
+    <section aria-labelledby="balance-details">
+        <h2 id="balance-details">BALANCE DETAILS</h2>
+        <p>${{ totalBalance | number : '1.2-2' }}</p>
+    </section>
+    <section aria-labelledby="profit">
+        <h2 id="profit">PROFIT</h2>
+        <div class="arrow">
+            <span class="bi" [ngClass]="isEarn ? 'bi-arrow-up' : 'bi-arrow-down'"></span>
+            <p [ngClass]="isEarn ? 'green' : 'red'">{{ totalPnl | number : '1.2-2'}}%</p>
+        </div>
+    </section>
+</main>
