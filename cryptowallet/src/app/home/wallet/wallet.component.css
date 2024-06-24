@@ -1,12 +1,12 @@
 @import url('../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 
 main {
-    
-   margin-top: 40px;
+
+    margin-top: 40px;
     margin-bottom: 150px;
 }
 
-main > h6 {
+main>h6 {
     margin-left: 40px;
     margin-bottom: 10px;
     color: darkgray;
@@ -18,14 +18,16 @@ main > h6 {
     font-size: small;
     color: #cbdbf2;
     text-align: end;
-    
+
 }
 
 .card {
     margin: 10px 15px 35px 35px;
-    background-color:  
-    /* #abbee3;  #0a4b8e; */ #7eaae8;   
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    background-color:
+
+        #6c757d;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    ;
     color: white;
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
@@ -46,7 +48,7 @@ main > h6 {
     align-items: flex-start;
     margin-left: 20px;
     flex-direction: column;
-    
+
 }
 
 .box-2 {
@@ -60,15 +62,15 @@ main > h6 {
 
 
 .green {
-    
-    color: #90EE90;
+
+    color: lightgreen;
     font-size: small;
     margin-right: 15px;
 }
 
 .red {
-   
-    color: #c7444a;
+
+    color: darkred;
     font-size: small;
     margin-right: 15px;
 }

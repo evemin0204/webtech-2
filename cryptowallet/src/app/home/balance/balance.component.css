@@ -83,27 +83,28 @@ section {
 }
 
 p {
-  font-size: x-small;
+  font-size: large;
   color: gray;
 }
 
-h2,
-p,
-.arrow>p {
+h4,
+p {
   color: darkgray;
 }
 
 .arrow {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .bi-arrow-up {
   color: green;
+  margin-right: 4px;
 }
 
 .bi-arrow-down {
-  color: red;
+  color: darkred;
+  margin-right: 4px;
 }
 
 .green {
@@ -111,5 +112,18 @@ p,
 }
 
 .red {
-  color: red;
+  color: darkred;
+}
+
+.current-balance {
+  font-size: xx-large;
+  color: black;
+}
+
+.placeholder {
+  height: 63px;
+}
+
+#balance-details {
+  margin-top: 18px;
 }

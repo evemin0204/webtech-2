@@ -1,22 +1,18 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-
     <div class="container-fluid">
-
         <div class="navbar-header">
-            <img src="../../assets/coins.png" alt="logo" style="width: 25px; height: 25px;">
-            <a class="navbar-brand" routerLink="">CryptoPortfolio</a>
+            <img src="../../assets/coins.png" alt="CryptoPortfolio logo" style="width: 25px; height: 25px;">
+            <a class="navbar-brand" href="#">CryptoPortfolio</a>
         </div>
-
-
         <div class="navbar-nav ml-auto">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-
-                    <a class="nav-link" style="color: lightgray;" *ngIf="show" (click)="logout()"
-                        type="button">Logout</a>
+                    <button class="nav-link" style="color: lightgray;" aria-label="Logout" *ngIf="show"
+                        (click)="logout()">
+                        Logout
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-
 </nav>

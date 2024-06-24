@@ -1,17 +1,17 @@
-<div class="row">
-    <div class="col-md-12">
+<section class="balance-section row" role="region" aria-labelledby="balance-section-title">
+    <div class="balance-container col-md-12">
+        <h2 id="balance-section-title" class="visually-hidden">Balance Information</h2>
         <app-balance [walletData]="walletData"></app-balance>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-5">
-        <app-wallet [walletData]="walletData">
-
-        </app-wallet>
-    </div>
-    <div class="col-md-7">
-        <app-transactions>
-
-        </app-transactions>
-    </div>
-</div>
+</section>
+<section class="wallet-transactions-section row" role="region" aria-labelledby="wallet-transactions-section-title">
+    <h2 id="wallet-transactions-section-title" class="visually-hidden">Wallet and Transactions</h2>
+    <article class="wallet-container col-md-5" role="article" aria-labelledby="wallet-title">
+        <h3 id="wallet-title" class="visually-hidden">Wallet Information</h3>
+        <app-wallet [walletData]="walletData"></app-wallet>
+    </article>
+    <aside class="transactions-container col-md-7" role="complementary" aria-labelledby="transactions-title">
+        <h3 id="transactions-title" class="visually-hidden">Transactions</h3>
+        <app-transactions></app-transactions>
+    </aside>
+</section>
