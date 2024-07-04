@@ -29,9 +29,10 @@
                         (ngModelChange)="transaction.transactionDate = $event" required>
                 </div>
                 <div class="form-group row justify-content-end">
-                    <button type="submit" class="col-4 btn btn-secondary">Update</button>
+                    <button type="submit" class="col-4 btn btn-secondary" aria-label="Update the form">Update</button>
                     <div class="col-2"></div>
-                    <button type="button" class="col-4 btn btn-secondary" (click)="cancel()">Cancel</button>
+                    <button type="button" class="col-4 btn btn-secondary" aria-label="Cancel"
+                        (click)="cancel()">Cancel</button>
                 </div>
             </form>
         </fieldset>
