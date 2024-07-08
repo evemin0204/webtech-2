@@ -48,8 +48,8 @@ Wir haben die folgenden WCAG-Kriterien in unserem Projekt berücksichtigt, um si
    Der Kontrast zwischen Text und Hintergrund beträgt mindestens 4,5:1, um die Lesbarkeit zu gewährleisten.
 3. #### 1.4.12 Text Spacing:
    Nutzer können den Abstand von Text anpassen, ohne dass die Inhalte unlesbar oder unzugänglich werden.
-4. #### 1.4.13 Text on Hover or Focus:
-   Text, der durch Hover oder Fokus sichtbar wird, ist zugänglich und bleibt lesbar.
+4. #### 1.4.13 Content on Hover or Focus:
+   Inhalte, die beim Hover oder Fokussieren erscheinen, sind zugänglich und beeinträchtigen nicht die Lesbarkeit oder Bedienbarkeit der Seite.
 5. #### 1.3.5 Identify Input Purpose:
    Die Absicht von Eingabefeldern wird klar identifiziert, um die Nutzung zu erleichtern.
 6. #### 1.4.1 Use of Color:
