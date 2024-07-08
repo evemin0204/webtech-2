@@ -24,14 +24,14 @@
                     <td>{{ transaction.transactionDate | date }}</td>
                     <td class="icon">
                         <button class="trash">
-                            <a [routerLink]="['/edit', transaction._id]" aria-label="Edit Transaction">
+                            <a [routerLink]="['/edit', transaction._id]" aria-label="Edit Transaction" alt = "Edit Transaction">
                                 <span class="bi bi-pencil-square fa-xs"></span>
                             </a>
                         </button>
                     </td>
                     <td>
                         <button class="icon-btn trash" (click)="deleteTransaction(transaction._id)"
-                            aria-label="Delete Transaction">
+                            aria-label="Delete Transaction" alt = "Delete Transaction">
                             <span class="bi bi-trash fa-xs"></span>
                         </button>
                     </td>

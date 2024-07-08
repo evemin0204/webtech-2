@@ -89,7 +89,8 @@ p {
 
 h4,
 p {
-  color: darkgray;
+  /* color: darkgray; */
+  color: #757575;
 }
 
 .arrow {

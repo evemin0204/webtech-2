@@ -23,9 +23,10 @@ main>h6 {
 
 .card {
     margin: 10px 15px 35px 35px;
-    background-color:
+    /* background-color:
 
-        #6c757d;
+        #6c757d; */
+    background-color: #474D52;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     ;
     color: white;
@@ -62,15 +63,14 @@ main>h6 {
 
 
 .green {
-
     color: lightgreen;
     font-size: small;
     margin-right: 15px;
 }
 
 .red {
-
-    color: darkred;
+    /* color: darkred; */
+    color: #FFA799;
     font-size: small;
     margin-right: 15px;
 }
