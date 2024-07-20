@@ -10,15 +10,15 @@
                     <legend>Registration Info</legend>
 
                     <div class="form-outline mb-4">
-                        <label for="username" class="visually-hidden">Username</label>
-                        <input type="email" class="form-control" id="username" name="username" placeholder="Username" autocomplete="username"
-                            required ngModel />
+                        <label for="username" class="col-2 col-form-label">Username</label>
+                        <input type="email" class="form-control" id="username" name="username" placeholder="Username"
+                            autocomplete="username" required ngModel />
                     </div>
 
                     <div class="form-outline mb-4">
-                        <label for="password" class="visually-hidden">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" autocomplete="password"
-                            required ngModel />
+                        <label for="password" class="col-2 col-form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                            autocomplete="password" required ngModel />
                     </div>
 
                     <div class="form-outline mb-3">
@@ -26,6 +26,11 @@
                     </div>
                 </fieldset>
             </form>
+            <div class="d-flex align-items-center justify-content-center pb-4">
+                <p class="mb-0 me-2">Alreary have an account?</p>
+                <button type="button" class="btn btn-outline-success" [routerLink]="'/login'"
+                    aria-label="Create new">Login</button>
+            </div>
 
             <div class="alert alert-success" role="alert" aria-live="polite" *ngIf="isSucceed">
                 <h4 class="alert-heading">Welcome!</h4>

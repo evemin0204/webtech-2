@@ -11,15 +11,16 @@
                 <h2 id="login-form-title">Please login to your account</h2>
 
                 <div class="form-outline mb-4">
-                    <label for="username" class="visually-hidden">Username</label>
-                    <input type="email" id="username" name="username" class="form-control" placeholder="Username" autocomplete="username"
-                        required ngModel />
+                    <label for="username" class="col-2 col-form-label">Username</label>
+
+                    <input type="email" id="username" name="username" class="form-control" placeholder="Username"
+                        autocomplete="username" required ngModel />
                 </div>
 
                 <div class="form-outline mb-4">
-                    <label for="password" class="visually-hidden">Password</label>
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" autocomplete="password"
-                        required ngModel />
+                    <label for="password" class="col-2 col-form-label">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password"
+                        autocomplete="password" required ngModel />
                 </div>
 
                 <div class="form-outline mb-3">
@@ -28,7 +29,7 @@
 
                 <div class="d-flex align-items-center justify-content-center pb-4">
                     <p class="mb-0 me-2">Don't have an account?</p>
-                    <button type="button" class="btn btn-outline-danger" [routerLink]="'/signup'"
+                    <button type="button" class="btn btn-outline-success" [routerLink]="'/signup'"
                         aria-label="Create new">Create new</button>
                 </div>
             </form>
